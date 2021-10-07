@@ -1,0 +1,25 @@
+{
+  "name": "flyingmangames",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch src/scss/:css/",
+    "build": "sass src/scss/:css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeintRabbit/flyingmangames.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FeintRabbit/flyingmangames/issues"
+  },
+  "homepage": "https://github.com/FeintRabbit/flyingmangames#readme",
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
+}

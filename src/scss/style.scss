@@ -1,0 +1,17 @@
+@use 'partials/fonts';
+@use 'partials/base';
+
+body {
+  background: url('/assets/img/bg/Sky.svg') center / contain;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ======= */
+/* Navbar */
+/* ======= */
+
+.nav-bg {
+  position: fixed;
+  width: 100%;
+}
