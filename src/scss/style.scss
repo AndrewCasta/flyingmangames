@@ -1,6 +1,10 @@
 @use 'partials/fonts';
 @use 'partials/base';
 
+html {
+  background-color: var(--primary);
+}
+
 body {
   background: url('/assets/img/bg/Sky.svg') center / contain;
   width: 100%;
@@ -11,7 +15,68 @@ body {
 /* Navbar */
 /* ======= */
 
-.nav-bg {
+nav {
   position: fixed;
-  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-img-container {
+  position: relative;
+
+  button {
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.nav-links-mobile {
+  background-color: var(--hills-bg);
+  transition: var(--transition);
+  overflow: hidden;
+  height: 168px;
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    text-align: center;
+    font-family: var(--font-heading), serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &.hidden {
+    height: 0px;
+  }
+}
+
+/* ======= */
+/* Hero */
+/* ======= */
+
+.hero {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .hero {
+    margin-top: 6rem;
+  }
 }
