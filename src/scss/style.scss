@@ -19,23 +19,29 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 .nav-img-container {
+  text-align: center;
+  margin: 0 auto;
   position: relative;
+  max-width: 1170px;
+  display: flex;
+  justify-content: center;
 
   button {
     background-color: transparent;
     box-shadow: none;
     position: absolute;
-    top: 3px;
+    top: 12px;
     left: 50%;
     transform: translate(-50%);
     z-index: 10;
   }
 
   img {
-    width: 100%;
+    width: 110%;
   }
 }
 
@@ -61,14 +67,26 @@ nav {
   }
 }
 
+@media screen and (min-width: 570px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
 /* ======= */
 /* Hero */
 /* ======= */
 
+.section {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
 .hero {
-  margin-top: 3rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: center;
+  max-height: 100vh;
 
   img {
     width: 95%;
@@ -77,11 +95,16 @@ nav {
 
 @media screen and (min-width: 570px) {
   .hero {
-    margin-top: 6rem;
+    padding-top: 6rem;
   }
 }
 @media screen and (min-width: 992px) {
   .hero {
-    margin-top: 12rem;
+    padding-top: 12rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .hero {
+    padding-top: 12rem;
   }
 }
