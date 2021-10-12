@@ -1,14 +1,22 @@
 @use 'partials/fonts';
 @use 'partials/base';
 
+:root {
+  --footer-height: 60px;
+}
+
 html {
   background-color: var(--primary);
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   background: url('/assets/img/bg/Sky.svg') center / contain;
   width: 100%;
-  min-height: 100vh;
+  /* Margin bottom by footer height */
+  min-height: calc(100vh - var(--footer-height));
+  margin-bottom: var(--footer-height);
 }
 
 /* ======= */
@@ -37,19 +45,19 @@ nav {
     top: 12px;
     left: 50%;
     transform: translate(-50%);
-    z-index: 10;
+    z-index: 2;
   }
 
-  img {
+  .nav-img {
     width: 110%;
   }
 }
 
-.nav-links-mobile {
+.nav-links {
   background-color: var(--hills-bg);
   transition: var(--transition);
   overflow: hidden;
-  height: 168px;
+  height: 224px;
 
   ul {
     margin: 0;
@@ -58,8 +66,13 @@ nav {
   li {
     text-align: center;
     font-family: var(--font-heading), serif;
+    text-shadow: 0 0 15px #ffffff;
     font-weight: 700;
     font-size: 2rem;
+
+    a {
+      color: #1d251e;
+    }
   }
 
   &.hidden {
@@ -67,11 +80,73 @@ nav {
   }
 }
 
-@media screen and (min-width: 570px) {
+// Switch Nav to desktop
+@media screen and (min-width: 900px) {
   .nav-toggle {
     display: none;
   }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links {
+    background-color: transparent;
+    position: absolute;
+    height: auto;
+    z-index: 3;
+    width: 70%;
+    max-width: 1000px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &.hidden {
+      height: auto;
+    }
+  }
 }
+
+/* ======= */
+/* Footer */
+/* ======= */
+
+.footer-content {
+  background: var(--hills-bg);
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: var(--footer-height);
+}
+
+// .footer-img-container {
+//   text-align: center;
+//   margin: 0 auto;
+//   max-width: 1170px;
+//   display: flex;
+//   justify-content: center;
+//   overflow: hidden;
+
+//   .footer-img {
+//     width: 110%;
+//     transform: rotate(180deg);
+//   }
+// }
+
+// @media screen and (min-width: 1170px) {
+//   .footer-img-container {
+//     overflow: visible;
+//   }
+// }
 
 /* ======= */
 /* Hero */
@@ -80,6 +155,13 @@ nav {
 .section {
   margin: 0 auto;
   max-width: 1170px;
+  width: 90%;
+}
+
+@media screen and (min-width: 1170px) {
+  .section {
+    width: 80%;
+  }
 }
 
 .hero {
@@ -98,13 +180,256 @@ nav {
     padding-top: 6rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .hero {
-    padding-top: 12rem;
+    padding-top: 9rem;
   }
 }
 @media screen and (min-width: 1170px) {
   .hero {
     padding-top: 12rem;
+  }
+}
+
+/* ======= */
+/* Planes */
+/* ======= */
+
+.plane-section {
+  padding: 2rem 0;
+
+  button {
+    background-color: transparent;
+    box-shadow: none;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+  }
+}
+
+.plane1 {
+  animation: plane 3s ease-in-out infinite;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+
+  img {
+    width: 100%;
+  }
+
+  button {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    // transform: translate(-100%, 0);
+  }
+}
+
+@keyframes plane {
+  0%,
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+  25%,
+  75% {
+    bottom: 5px;
+  }
+  50% {
+    left: 3px;
+    bottom: 0px;
+  }
+}
+
+/* ======= */
+/* Cloud */
+/* ======= */
+
+.cloud-content-section {
+  background-color: var(--white);
+  min-height: 200px;
+  padding: 2rem 0;
+}
+
+.cloud-content {
+  text-align: center;
+}
+
+// https://www.shapedivider.app/
+
+.custom-shape-divider-bottom-1633655606 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1633655606 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 76px;
+}
+
+.custom-shape-divider-bottom-1633655606 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-top-1633655815 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1633655815 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 76px;
+}
+
+.custom-shape-divider-top-1633655815 .shape-fill {
+  fill: #ffffff;
+}
+
+/* ======= */
+/* Games */
+/* ======= */
+
+.game {
+  position: relative;
+  background-color: var(--primary-light);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-3);
+}
+
+@media screen and (min-width: 900px) {
+  .game {
+    display: flex;
+  }
+  .game-img-container {
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .game-details {
+    flex: 0 0 calc(50% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.game-img-container {
+  position: relative;
+
+  img {
+    width: 100%;
+    // height: 100%;
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 0.5rem);
+    background-color: var(--secondary-light);
+    padding: 0.5rem;
+  }
+}
+
+.game-details {
+  text-align: left;
+  padding: 1rem;
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  .game-footer {
+    display: flex;
+    justify-content: space-evenly;
+
+    span {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    img {
+      height: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .game-details {
+    .game-footer {
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// .game-icon {
+//   background-color: var(--white);
+//   border-radius: 15px;
+//   border: var(--black) solid 3px;
+//   display: flex;
+//   flex-direction: column;
+//   width: 70px;
+//   height: 70px;
+//   justify-content: center;
+//   align-items: center;
+//   // padding: 0.2rem;
+
+//   i {
+//     font-size: 1.3rem;
+//   }
+// }
+
+/* ============ */
+/* Mailing Form */
+/* ============ */
+
+/* ============ */
+/* Mailing Form */
+/* ============ */
+.mailing-signup {
+  padding-bottom: 1rem;
+}
+
+.mailing-form {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 28rem;
+}
+.mailing-form input {
+  flex: 1 1 auto;
+  margin-right: 0.25rem;
+}
+.mailing-form input,
+.mailing-form button {
+  height: 2rem;
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .mailing-signup {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45rem;
+
+    h4 {
+      align-self: flex-end;
+      margin: 0;
+    }
   }
 }

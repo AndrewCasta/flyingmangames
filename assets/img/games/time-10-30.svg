@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.952551mm"
+   height="17.151896mm"
+   viewBox="0 0 16.952551 17.151895"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="time.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.5287037"
+     inkscape:cx="68.685645"
+     inkscape:cy="0.9812235"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-62.011442,-35.982725)">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.40392;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stop-color:#000000"
+       id="rect2467"
+       width="15.548631"
+       height="15.747976"
+       x="62.713402"
+       y="36.684685"
+       ry="2.9901218" />
+    <g
+       id="g2481"
+       transform="matrix(0.32538079,0,0,0.32538079,614.38166,-636.43209)">
+      <g
+         id="g2475"
+         transform="matrix(0.6135866,0,0,0.6135866,-1686.2875,2078.1776)">
+        <path
+           d="m 23.894,24.287 -2.636,-3.108 c -0.601,-0.715 -1.082,-1.542 -1.431,-2.462 l -0.509,-1.341 16.008,-0.152 -0.764,1.475 c -1.397,2.7 -3.879,4.561 -6.64,4.978 z m -1.513,-4.94 c 0.126,0.189 0.261,0.371 0.406,0.542 l 1.911,2.254 2.927,-0.443 c 1.563,-0.236 3.061,-1.131 4.173,-2.442 z"
+           id="path2469" />
+        <path
+           d="M 26.944,39.221 11.775,33.534 12.956,30.38 c 1.205,-3.207 4.001,-5.585 7.125,-6.058 l 4.028,-0.61 2.637,3.107 c 2.042,2.414 2.584,6.043 1.383,9.248 z m -12.595,-6.859 11.425,4.284 0.48,-1.282 c 0.951,-2.536 0.545,-5.383 -1.036,-7.252 l -1.915,-2.256 -2.924,0.442 c -2.419,0.367 -4.598,2.244 -5.552,4.783 z"
+           id="path2471" />
+        <path
+           d="M 30.012,48 C 29.893,48 29.775,47.979 29.66,47.937 L 4.001,38.315 C 3.752,38.221 3.551,38.034 3.441,37.793 3.332,37.551 3.322,37.276 3.416,37.027 l 1.845,-4.916 c 0.194,-0.517 0.77,-0.777 1.287,-0.585 l 2.507,0.938 1.166,-3.11 c 1.394,-3.716 4.331,-6.504 7.867,-7.571 -1.965,-3.132 -2.344,-7.165 -0.949,-10.879 L 18.306,7.793 15.8,6.854 C 15.552,6.761 15.351,6.573 15.241,6.332 15.131,6.09 15.122,5.815 15.215,5.567 L 17.059,0.649 C 17.253,0.132 17.83,-0.127 18.347,0.064 L 44,9.684 c 0.517,0.194 0.778,0.77 0.585,1.287 l -1.842,4.917 c -0.093,0.249 -0.281,0.45 -0.522,0.56 -0.243,0.11 -0.519,0.121 -0.766,0.026 l -2.504,-0.94 -1.167,3.113 c -1.392,3.717 -4.329,6.505 -7.867,7.571 1.963,3.13 2.344,7.16 0.953,10.876 l -1.169,3.113 2.506,0.939 c 0.517,0.194 0.778,0.771 0.585,1.287 l -1.844,4.918 c -0.094,0.249 -0.281,0.45 -0.522,0.56 C 30.294,47.97 30.153,48 30.012,48 Z M 5.64,36.794 l 23.787,8.919 1.142,-3.046 -2.507,-0.939 c -0.248,-0.094 -0.449,-0.281 -0.559,-0.522 -0.11,-0.242 -0.119,-0.518 -0.026,-0.766 l 1.521,-4.049 c 1.336,-3.568 0.743,-7.465 -1.546,-10.166 -0.234,-0.276 -0.301,-0.658 -0.174,-0.998 0.128,-0.339 0.429,-0.583 0.787,-0.638 3.503,-0.528 6.51,-3.074 7.847,-6.645 l 1.519,-4.05 c 0.094,-0.249 0.281,-0.45 0.522,-0.56 0.243,-0.109 0.518,-0.119 0.766,-0.025 l 2.504,0.94 1.14,-3.043 -23.783,-8.918 -1.142,3.045 2.506,0.939 c 0.248,0.093 0.45,0.281 0.559,0.523 0.11,0.241 0.119,0.517 0.026,0.765 l -1.52,4.048 c -1.339,3.567 -0.749,7.463 1.543,10.168 0.234,0.277 0.3,0.658 0.173,0.998 -0.127,0.339 -0.428,0.583 -0.787,0.638 -3.5,0.53 -6.507,3.077 -7.846,6.646 l -1.516,4.046 c -0.194,0.517 -0.77,0.777 -1.287,0.586 L 6.782,33.75 Z"
+           id="path2473" />
+      </g>
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.613755;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000"
+         d="m -1674.0365,2099.2349 -3.3191,-1.2492 0.2503,-0.6876 c 0.3425,-0.9408 1.5309,-2.2086 2.4346,-2.5974 0.403,-0.1734 1.1639,-0.364 1.6908,-0.4236 l 0.9581,-0.1084 0.611,0.6719 c 1.4422,1.5859 1.7871,3.309 1.048,5.2367 -0.089,0.2321 -0.2051,0.4186 -0.2582,0.4144 -0.053,0 -1.59,-0.5698 -3.4155,-1.2568 z"
+         id="path2477" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.216995;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000"
+         d="m -1671.8024,2090.9213 c -0.3782,-0.4483 -0.6815,-0.8201 -0.674,-0.8262 0.01,-0.01 1.2831,-0.027 2.8346,-0.046 l 2.821,-0.035 -0.3241,0.3082 c -0.7742,0.7363 -1.4395,1.0248 -2.8519,1.237 -0.5208,0.078 -0.9854,0.1502 -1.0324,0.1598 -0.055,0.011 -0.334,-0.2769 -0.7732,-0.7975 z"
+         id="path2479" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:2.33987px;line-height:1.25;font-family:Rookie;-inkscape-font-specification:Rookie;word-spacing:0px;stroke-width:0.350981"
+       x="67.534805"
+       y="39.32621"
+       id="text2489"><tspan
+         sodipodi:role="line"
+         id="tspan2487"
+         x="67.534805"
+         y="39.32621"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.33987px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Semi-Bold';stroke-width:0.350981">Time</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.33987px;line-height:1.25;font-family:Rookie;-inkscape-font-specification:Rookie;word-spacing:0px;stroke-width:0.350981"
+       x="64.077652"
+       y="51.643101"
+       id="text2493"><tspan
+         sodipodi:role="line"
+         id="tspan2491"
+         x="64.077652"
+         y="51.643101"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.33987px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Semi-Bold';stroke-width:0.350981">10-30 mins</tspan></text>
+  </g>
+</svg>
