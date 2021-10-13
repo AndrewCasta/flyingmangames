@@ -21,17 +21,19 @@
   <body>
     <!-- Navabr -->
     <nav>
+      <div class="nav-green-bar"></div>
+
       <!-- mobile nav area -->
       <div class="nav-links hidden">
         <ul>
-          <li><a class="nav-link" href="">Home</a></li>
-          <li><a class="nav-link" href="">About</a></li>
-          <li><a class="nav-link" href="">Games</a></li>
+          <li><a class="nav-link scroll-link" href="hero">Home</a></li>
+          <li><a class="nav-link scroll-link" href="about">About</a></li>
+          <li><a class="nav-link scroll-link" href="games">Games</a></li>
           <li><a class="nav-link" href="">Blog</a></li>
         </ul>
       </div>
       <div class="nav-img-container">
-        <img class="nav-img" src="/assets/img/bg/Hills2.svg" alt="" />
+        <img class="nav-img" src="/assets/img/bg/Hills3.svg" alt="" />
         <!-- Mobile nav button -->
         <button class="nav-toggle" id="nav-toggle">
           <i class="fas fa-chevron-circle-down fa-2x"></i>
@@ -40,20 +42,45 @@
     </nav>
 
     <!-- Hero -->
-    <div class="hero section">
+    <div id="hero" class="hero section">
       <img src="/assets/img/logos/FlyingMan_NoBG.svg" alt="" />
     </div>
 
-    <!-- Plane section -->
+    <!-- Plane mailing section -->
     <div class="plane-section section">
       <div class="plane1">
-        <img src="/assets/img/bg/Plane_Red.svg" alt="" />
-        <button class="button">Join our mailing list</button>
+        <img
+          href="mailing"
+          class="scroll-link"
+          src="/assets/img/bg/Plane_Stripe_Mailing.svg"
+          alt="Join our mailing list"
+        />
       </div>
     </div>
 
+    <!-- about section -->
+    <div id="about" class="about-section section">
+      <!-- <h1>About Us</h1> -->
+      <img src="/assets/img/bg/Plane_Red_About.svg" alt="About Us" />
+      <article>
+        <p>
+          Flying Man Games is a board game and card game design group based in
+          Melbourne, Australia. <br />
+          We've played and designed games together for 15 years, now we'd like
+          to share some with you!
+        </p>
+        <ul>
+          Some of things we care most about in our designs are:
+          <li>Low barrier for entry with high skill ceiling.</li>
+          <li>Interesting decision space.</li>
+          <li>Novel interaction of game mechanics.</li>
+          <li>Small Packages!</li>
+        </ul>
+      </article>
+    </div>
+
     <!-- cloud section -->
-    <div class="cloud-section">
+    <div id="games" class="cloud-section">
       <!-- Top cloud -->
       <div class="custom-shape-divider-bottom-1633655606">
         <svg
@@ -78,53 +105,63 @@
           ></path>
         </svg>
       </div>
-      <!-- Content -->
-      <div class="cloud-content-section">
-        <div class="cloud-content">
-          <h1>Our Games</h1>
-          <!-- All games -->
-          <div class="games-section section">
-            <!-- A single game -->
-            <article class="game">
-              <div class="game-img-container">
-                <img
-                  class="game-img"
-                  src="./assets/img/games/prognosis-death.png"
-                  alt="Prognosis Death"
-                />
-                <p class="game-img-banner">Coming to Kickstarter Soon!</p>
-              </div>
-              <div class="game-details">
-                <div class="game-details-body">
-                  <h3>Prognosis Death</h3>
-                  <p>
-                    Collect symptoms to diagnose a patient and solve a medical
-                    mystery. Will you outwit your rivals and claim credit for
-                    the patient’s recovery? Will you sabotage them at any cost?
-                    Every action has consequences in this strategic card game.
-                  </p>
+      <div class="cloud-content-background">
+        <!-- Content -->
+        <div class="cloud-content-section section">
+          <!-- Plane heading -->
+          <!-- <h1>Our Games</h1> -->
+          <img
+            class="heading-plane"
+            src="/assets/img/bg/Plane_Red_Games2.svg"
+            alt=""
+          />
+          <div class="cloud-content">
+            <!-- All games -->
+            <div class="games-section">
+              <!-- A single game -->
+              <article class="game">
+                <div class="game-img-container">
+                  <img
+                    class="game-img"
+                    src="./assets/img/games/prognosis-death.png"
+                    alt="Prognosis Death"
+                  />
+                  <p class="game-img-banner">Coming to Kickstarter Soon!</p>
                 </div>
-                <div class="game-footer">
-                  <span>
-                    <img src="./assets/img/icons/Players.svg" alt="" /><span
-                      id="players"
-                      >2-4</span
-                    >
-                    &nbspPlayers
-                  </span>
-                  <span>
-                    <img src="./assets/img/icons/Age.svg" alt="" />Ages&nbsp
-                    <span id="ages">14+</span>
-                  </span>
-                  <span>
-                    <img src="./assets/img/icons/Time.svg" alt="" />&nbsp<span
-                      id="players"
-                      >10-30</span
-                    >&nbspMins
-                  </span>
+                <div class="game-details">
+                  <div class="game-details-body">
+                    <h3>Prognosis Death</h3>
+                    <p>
+                      Collect symptoms to diagnose a patient and solve a medical
+                      mystery. Will you outwit your rivals and claim credit for
+                      the patient’s recovery? Will you sabotage them at any
+                      cost? Every action has consequences in this strategic card
+                      game.
+                    </p>
+                  </div>
+                  <div class="game-footer">
+                    <span>
+                      <img src="./assets/img/icons/Players.svg" alt="" /><span
+                        id="players"
+                        >2-4</span
+                      >
+                      &nbspPlayers
+                    </span>
+                    <span>
+                      <img src="./assets/img/icons/Age.svg" alt="" />Ages&nbsp
+                      <span id="ages">14+</span>
+                    </span>
+                    <span>
+                      <img src="./assets/img/icons/Time.svg" alt="" />&nbsp<span
+                        id="players"
+                        >10-30</span
+                      >&nbspMins
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
+            <button class="all-games-button">See All</button>
           </div>
         </div>
       </div>
@@ -160,7 +197,7 @@
         <img class="footer-img" src="/assets/img/bg/Hills2.svg" alt="" />
       </div> -->
       <div class="footer-content">
-        <div class="mailing-signup section">
+        <div id="mailing" class="mailing-signup section">
           <h4>Mailing list sign-up:</h4>
           <form
             class="mailing-form"
@@ -168,7 +205,12 @@
             action="https://formspree.io/f/xyylvqky"
             method="POST"
           >
-            <input type="email" placeholder="email" required />
+            <input
+              id="mailing-input"
+              type="email"
+              placeholder="email"
+              required
+            />
             <button id="mailing-form-button">Submit</button>
             <!-- <p id="mailing-form-status"></p> -->
           </form>

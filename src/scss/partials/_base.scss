@@ -107,7 +107,7 @@ ul {
 }
 
 button {
-  // background: var(--primary-500);
+  background: var(--secondary-dark);
   cursor: pointer;
   color: var(--white);
   border: transparent;
@@ -120,7 +120,19 @@ button {
   display: inline-block;
 
   &:hover {
-    // background: var(--primary-700);
+    background: var(--secondary);
     box-shadow: var(--shadow-3);
+  }
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 95%;
+}
+
+@media screen and (min-width: 1170px) {
+  .section {
+    width: 80%;
   }
 }

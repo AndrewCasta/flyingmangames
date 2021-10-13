@@ -10,6 +10,28 @@ navToggle.addEventListener('click', e => {
   mobileNavLinks.classList.toggle('hidden');
 });
 
+const scrollLinks = document.querySelectorAll('.scroll-link');
+scrollLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    mobileNavLinks.classList.add('hidden');
+
+    const id = e.target.getAttribute('href');
+    const element = document.getElementById(id);
+    let position = element.offsetTop - 62;
+
+    if (id === 'mailing') {
+      position = document.body.scrollHeight;
+    }
+
+    window.scrollTo({
+      left: 0,
+      top: position,
+      behavior: 'smooth',
+    });
+  });
+});
+
 // ============
 // Form Submit
 // ============

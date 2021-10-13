@@ -2,7 +2,7 @@
 @use 'partials/base';
 
 :root {
-  --footer-height: 60px;
+  --footer-height: 140px;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: url('/assets/img/bg/Sky.svg') center / contain;
+  background: url('/assets/img/bg/Sky5.svg') center / contain;
   width: 100%;
   /* Margin bottom by footer height */
   min-height: calc(100vh - var(--footer-height));
@@ -28,6 +28,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 .nav-img-container {
@@ -49,7 +50,7 @@ nav {
   }
 
   .nav-img {
-    width: 110%;
+    width: 220%;
   }
 }
 
@@ -128,41 +129,9 @@ nav {
   height: var(--footer-height);
 }
 
-// .footer-img-container {
-//   text-align: center;
-//   margin: 0 auto;
-//   max-width: 1170px;
-//   display: flex;
-//   justify-content: center;
-//   overflow: hidden;
-
-//   .footer-img {
-//     width: 110%;
-//     transform: rotate(180deg);
-//   }
-// }
-
-// @media screen and (min-width: 1170px) {
-//   .footer-img-container {
-//     overflow: visible;
-//   }
-// }
-
 /* ======= */
 /* Hero */
 /* ======= */
-
-.section {
-  margin: 0 auto;
-  max-width: 1170px;
-  width: 90%;
-}
-
-@media screen and (min-width: 1170px) {
-  .section {
-    width: 80%;
-  }
-}
 
 .hero {
   padding-top: 3rem;
@@ -192,18 +161,54 @@ nav {
 }
 
 /* ======= */
-/* Planes */
+/* About */
 /* ======= */
+.about-section {
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: var(--shadow-4);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+
+  img {
+    animation: plane 3s ease-in-out infinite;
+    width: 100%;
+    max-width: 570px;
+  }
+
+  article {
+    text-align: left;
+    li {
+      list-style: disc;
+      margin-left: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 570px) {
+  .about-section {
+    padding: 3rem;
+
+    article {
+      display: flex;
+      gap: 1rem;
+      p,
+      ul {
+        flex: 0 0 50%;
+      }
+      li {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+/* ============ */
+/* Mailing List */
+/* ============ */
 
 .plane-section {
   padding: 2rem 0;
-
-  button {
-    background-color: transparent;
-    box-shadow: none;
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-  }
 }
 
 .plane1 {
@@ -215,13 +220,8 @@ nav {
 
   img {
     width: 100%;
-  }
-
-  button {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    // transform: translate(-100%, 0);
+    max-width: 570px;
+    cursor: pointer;
   }
 }
 
@@ -245,14 +245,52 @@ nav {
 /* Cloud */
 /* ======= */
 
-.cloud-content-section {
+.cloud-section {
+  padding-bottom: 5rem;
+}
+
+.cloud-content-background {
   background-color: var(--white);
+}
+
+.cloud-content-section {
   min-height: 200px;
   padding: 2rem 0;
+  position: relative;
 }
 
 .cloud-content {
   text-align: center;
+  padding-top: 0.25rem;
+}
+
+.heading-plane {
+  // animation: plane 3s ease-in-out infinite;
+  position: absolute;
+  width: 95%;
+  top: -70px;
+  left: 50%;
+  max-width: 570px;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 578px) {
+  .cloud-content {
+    padding-top: 1rem;
+  }
+}
+@media screen and (min-width: 760px) {
+  .cloud-content {
+    padding-top: 5rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .heading-plane {
+    width: 80%;
+    // left: 10%;
+  }
+}
+@media screen and (min-width: 1170px) {
 }
 
 // https://www.shapedivider.app/
@@ -296,6 +334,10 @@ nav {
 /* Games */
 /* ======= */
 
+.games-section {
+  margin-bottom: 2rem;
+}
+
 .game {
   position: relative;
   background-color: var(--primary-light);
@@ -326,7 +368,6 @@ nav {
 
   img {
     width: 100%;
-    // height: 100%;
   }
 
   p {
@@ -363,6 +404,11 @@ nav {
   }
 }
 
+.all-games-button {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 1170px) {
   .game-details {
     .game-footer {
@@ -372,27 +418,6 @@ nav {
     }
   }
 }
-
-// .game-icon {
-//   background-color: var(--white);
-//   border-radius: 15px;
-//   border: var(--black) solid 3px;
-//   display: flex;
-//   flex-direction: column;
-//   width: 70px;
-//   height: 70px;
-//   justify-content: center;
-//   align-items: center;
-//   // padding: 0.2rem;
-
-//   i {
-//     font-size: 1.3rem;
-//   }
-// }
-
-/* ============ */
-/* Mailing Form */
-/* ============ */
 
 /* ============ */
 /* Mailing Form */

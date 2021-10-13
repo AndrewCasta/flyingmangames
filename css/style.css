@@ -115,6 +115,7 @@ ul {
 }
 
 button {
+  background: var(--secondary-dark);
   cursor: pointer;
   color: var(--white);
   border: transparent;
@@ -127,11 +128,23 @@ button {
   display: inline-block;
 }
 button:hover {
+  background: var(--secondary);
   box-shadow: var(--shadow-3);
 }
 
+.section {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 95%;
+}
+
+@media screen and (min-width: 1170px) {
+  .section {
+    width: 80%;
+  }
+}
 :root {
-  --footer-height: 60px;
+  --footer-height: 140px;
 }
 
 html {
@@ -141,7 +154,7 @@ html {
 }
 
 body {
-  background: url("/assets/img/bg/Sky.svg") center/contain;
+  background: url("/assets/img/bg/Sky5.svg") center/contain;
   width: 100%;
   /* Margin bottom by footer height */
   min-height: calc(100vh - var(--footer-height));
@@ -156,6 +169,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 .nav-img-container {
@@ -176,7 +190,7 @@ nav {
   z-index: 2;
 }
 .nav-img-container .nav-img {
-  width: 110%;
+  width: 220%;
 }
 
 .nav-links {
@@ -248,17 +262,6 @@ nav {
 /* ======= */
 /* Hero */
 /* ======= */
-.section {
-  margin: 0 auto;
-  max-width: 1170px;
-  width: 90%;
-}
-
-@media screen and (min-width: 1170px) {
-  .section {
-    width: 80%;
-  }
-}
 .hero {
   padding-top: 3rem;
   display: flex;
@@ -285,16 +288,50 @@ nav {
   }
 }
 /* ======= */
-/* Planes */
+/* About */
 /* ======= */
+.about-section {
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: var(--shadow-4);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.about-section img {
+  animation: plane 3s ease-in-out infinite;
+  width: 100%;
+  max-width: 570px;
+}
+.about-section article {
+  text-align: left;
+}
+.about-section article li {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 570px) {
+  .about-section {
+    padding: 3rem;
+  }
+  .about-section article {
+    display: flex;
+    gap: 1rem;
+  }
+  .about-section article p,
+.about-section article ul {
+    flex: 0 0 50%;
+  }
+  .about-section article li {
+    margin-left: 2rem;
+  }
+}
+/* ============ */
+/* Mailing List */
+/* ============ */
 .plane-section {
   padding: 2rem 0;
-}
-.plane-section button {
-  background-color: transparent;
-  box-shadow: none;
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
 }
 
 .plane1 {
@@ -306,11 +343,8 @@ nav {
 }
 .plane1 img {
   width: 100%;
-}
-.plane1 button {
-  position: absolute;
-  top: 15px;
-  left: 50%;
+  max-width: 570px;
+  cursor: pointer;
 }
 
 @keyframes plane {
@@ -329,16 +363,49 @@ nav {
 /* ======= */
 /* Cloud */
 /* ======= */
-.cloud-content-section {
+.cloud-section {
+  padding-bottom: 5rem;
+}
+
+.cloud-content-background {
   background-color: var(--white);
+}
+
+.cloud-content-section {
   min-height: 200px;
   padding: 2rem 0;
+  position: relative;
 }
 
 .cloud-content {
   text-align: center;
+  padding-top: 0.25rem;
 }
 
+.heading-plane {
+  position: absolute;
+  width: 95%;
+  top: -70px;
+  left: 50%;
+  max-width: 570px;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 578px) {
+  .cloud-content {
+    padding-top: 1rem;
+  }
+}
+@media screen and (min-width: 760px) {
+  .cloud-content {
+    padding-top: 5rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .heading-plane {
+    width: 80%;
+  }
+}
 .custom-shape-divider-bottom-1633655606 {
   width: 100%;
   overflow: hidden;
@@ -377,6 +444,10 @@ nav {
 /* ======= */
 /* Games */
 /* ======= */
+.games-section {
+  margin-bottom: 2rem;
+}
+
 .game {
   position: relative;
   background-color: var(--primary-light);
@@ -437,14 +508,16 @@ nav {
   height: 50%;
 }
 
+.all-games-button {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 1170px) {
   .game-details .game-footer span {
     font-size: 1rem;
   }
 }
-/* ============ */
-/* Mailing Form */
-/* ============ */
 /* ============ */
 /* Mailing Form */
 /* ============ */
