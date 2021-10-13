@@ -205,7 +205,6 @@ nav {
 .nav-links li {
   text-align: center;
   font-family: var(--font-heading), serif;
-  text-shadow: 0 0 15px #ffffff;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -249,6 +248,10 @@ nav {
   background: var(--hills-bg);
   text-align: center;
   padding: 0.2rem;
+}
+.footer-content .footer-heading {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
 }
 
 .footer {
@@ -521,10 +524,6 @@ nav {
 /* ============ */
 /* Mailing Form */
 /* ============ */
-.mailing-signup {
-  padding-bottom: 1rem;
-}
-
 .mailing-form {
   margin: 0 auto;
   width: 100%;
