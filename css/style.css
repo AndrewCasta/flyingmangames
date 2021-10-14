@@ -108,7 +108,7 @@ ul {
   padding: 0;
 }
 
-.img {
+img {
   width: 100%;
   display: block;
   object-fit: cover;
@@ -161,6 +161,32 @@ body {
   margin-bottom: var(--footer-height);
 }
 
+.nav-buffer {
+  height: 4rem;
+}
+
+.no-hero-first-section {
+  padding-top: 3rem;
+}
+
+@media screen and (min-width: 570px) {
+  .no-hero-first-section {
+    padding-top: 6rem;
+  }
+
+  .nav-buffer {
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .no-hero-first-section {
+    padding-top: 10rem;
+  }
+
+  .nav-buffer {
+    height: 8rem;
+  }
+}
 /* ======= */
 /* Navbar */
 /* ======= */
@@ -363,6 +389,17 @@ nav {
     bottom: 0px;
   }
 }
+.mailing-signup-news {
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: var(--shadow-4);
+  padding: 0.25rem 1rem 1.5rem 1rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.mailing-signup-news h4 {
+  margin: 1rem 0;
+}
+
 /* ======= */
 /* Cloud */
 /* ======= */
@@ -458,23 +495,6 @@ nav {
   box-shadow: var(--shadow-3);
 }
 
-@media screen and (min-width: 900px) {
-  .game {
-    display: flex;
-  }
-
-  .game-img-container img {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .game-details {
-    flex: 0 0 calc(50% - 2rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
 .game-img-container {
   position: relative;
 }
@@ -497,25 +517,52 @@ nav {
 .game-details h3 {
   margin-top: 1rem;
 }
-.game-details .game-footer {
+.game-details .game-footer-icons {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 0.25rem;
 }
-.game-details .game-footer span {
+.game-details .game-footer-icons span {
   display: flex;
   align-items: center;
   font-size: 0.9rem;
   margin: 0;
 }
-.game-details .game-footer img {
+.game-details .game-footer-icons img {
   height: 50%;
 }
 
 .all-games-button {
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
+  display: none;
 }
 
+@media screen and (min-width: 578px) {
+  .game-details .game-footer span {
+    font-size: 1rem;
+  }
+  .game-details .game-footer img {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .game {
+    display: flex;
+  }
+
+  .game-img-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .game-details {
+    flex: 0 0 calc(50% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 1170px) {
   .game-details .game-footer span {
     font-size: 1rem;
@@ -556,6 +603,13 @@ nav {
     align-self: flex-end;
     margin: 0;
   }
+
+  .mailing-signup-news {
+    padding: 1rem;
+  }
 }
+/* ============ */
+/* News         */
+/* ============ */
 
 /*# sourceMappingURL=style.css.map */

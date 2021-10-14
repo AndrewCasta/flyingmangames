@@ -18,7 +18,7 @@ scrollLinks.forEach(link => {
 
     const id = e.target.getAttribute('href');
     const element = document.getElementById(id);
-    let position = element.offsetTop - 62;
+    let position = element.offsetTop - 150;
 
     if (id === 'mailing') {
       position = document.body.scrollHeight;
