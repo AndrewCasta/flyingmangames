@@ -546,6 +546,10 @@ nav {
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-3);
 }
+.game:hover {
+  transform: scale(1.01);
+  transition: var(--transition);
+}
 
 .game-img-container {
   position: relative;
