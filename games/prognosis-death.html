@@ -25,9 +25,10 @@
       <!-- mobile nav area -->
       <div class="nav-links hidden">
         <ul>
-          <li><a class="#" href="hero">Home</a></li>
-          <li><a class="#" href="about">About</a></li>
-          <li><a class="nav-link scroll-link" href="games">Games</a></li>
+          <li><a class="nav-link" href="/index.html">Home</a></li>
+          <li><a class="nav-link" href="/index.html">About</a></li>
+          <li><a class="nav-link" href="/index.html#games">Games</a></li>
+          <li><a href="/news.html">News</a></li>
           <li>
             <span>
               <a
@@ -53,23 +54,10 @@
         </button>
       </div>
     </nav>
-    <div class="nav-buffer"></div>
-
-    <div id="mailing" class="mailing-signup section mailing-signup-news">
-      <h4>Mailing list sign-up:</h4>
-      <form
-        class="mailing-form"
-        id="mailing-form"
-        action="https://formspree.io/f/xyylvqky"
-        method="POST"
-      >
-        <input id="mailing-input" type="email" placeholder="email" required />
-        <button id="mailing-form-button">Submit</button>
-      </form>
-    </div>
+    <div class="nav-buffer--single-game"></div>
 
     <!-- cloud section -->
-    <div class="cloud-section">
+    <div id="games" class="cloud-section">
       <!-- Top cloud -->
       <div class="custom-shape-divider-bottom-1633655606">
         <svg
@@ -97,37 +85,124 @@
       <div class="cloud-content-background">
         <!-- Content -->
         <div class="cloud-content-section section">
-          <h1>Updates</h1>
-          <article class="news-article">
-            <div class="article-header">
-              <h4>News Title</h4>
-              <span>October 14, 2021</span>
-            </div>
-            <div class="article-body">
+          <!-- Plane heading -->
+          <img
+            class="heading-plane"
+            src="/assets/img/games/Plane_Red_Prognosis.svg"
+            alt="News"
+          />
+          <!-- game section -->
+          <main id="single-game-container" class="single-game-container">
+            <div class="image-column">
               <img src="../assets/img/games/prognosis-death.png" alt="" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                placeat nihil, ullam labore molestiae deserunt veritatis
-                asperiores beatae doloremque doloribus! Expedita recusandae
-                voluptate repudiandae ad ipsam sit dignissimos! Maiores, optio.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident voluptatibus, nesciunt voluptas eius corrupti laborum
-                illum incidunt vero facilis. Impedit veritatis inventore
-                ducimus, odio provident ut beatae eius. Sed quasi libero magnam
-                ratione quo iusto, laudantium maiores aperiam id sit odio beatae
-                quis. Mollitia nesciunt quae facilis pariatur. Delectus, dolores
-                quis. Quis, delectus veniam. Dignissimos quidem pariatur dolore
-                labore assumenda optio rerum eligendi. Odit consequatur
-                molestias enim ut quidem commodi quae at? Provident accusantium,
-                deserunt impedit rerum harum rem asperiores, dolore beatae
-                obcaecati eius ex expedita tempora quaerat totam eveniet optio
-                ratione esse? Sed animi dignissimos sunt minus placeat
-                voluptatem.
-              </p>
             </div>
-          </article>
+            <div class="single-game-content">
+              <h2>Prognosis Death</h2>
+              <article class="single-game-details">
+                <div class="game-footer-icons">
+                  <span class="icon-group">
+                    <img src="../assets/img/icons/Players.svg" alt="" /><span
+                      id="players"
+                      >2-4</span
+                    >
+                    &nbspPlayers
+                  </span>
+                  <span class="icon-group">
+                    <img src="../assets/img/icons/Age.svg" alt="" />Ages&nbsp
+                    <span id="ages">14+</span>
+                  </span>
+                  <span class="icon-group">
+                    <img src="../assets/img/icons/Time.svg" alt="" />&nbsp<span
+                      id="players"
+                      >10-30</span
+                    >&nbspMins
+                  </span>
+                </div>
+
+                <ul class="single-game-links">
+                  <li>
+                    <button>
+                      <a href="">Rulebook</a>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <a
+                        href="https://boardgamegeek.com/boardgame/347765/prognosis-death"
+                        target="_blank"
+                        >BGG</a
+                      >
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <a
+                        href="https://www.kickstarter.com/projects/flyingmangames/prognosisdeath"
+                        target="_blank"
+                        >Kickstarter</a
+                      >
+                    </button>
+                  </li>
+                </ul>
+              </article>
+              <article class="single-game-body">
+                <p>Coming soon! Sign up to our mailing list for updates!</p>
+                <p>
+                  St. Muerte Hospital 10:00 pm - A patient is admitted to the
+                  emergency ward with rapidly developing symptoms. Doctors rush
+                  to see the patient with morbid curiosity on the otherwise dull
+                  night...
+                </p>
+
+                <p>
+                  Prognosis Death is a set collection game where each player is
+                  a doctor who is trying to take the credit for curing a
+                  patient. Collect symptoms and use them to construct a
+                  diagnosis. In order to successfully discharge the patient
+                  you'll need to outwit your rivals and challenge their
+                  diagnoses. Be aware - every action has consequences, if you
+                  delay too long the patient may perish!
+                </p>
+
+                <p>
+                  Your objective in Prognosis Death is to either have the lowest
+                  score remaining in your hand when the patient is discharged,
+                  or the highest score in the case that the patient succumbs to
+                  their illness and perishes.
+                </p>
+
+                <p>
+                  At the start of every turn in Prognosis Death you’ll add
+                  symptoms to your hand by either drawing an unknown card from
+                  the deck, or by taking a card from the public discard area. At
+                  the end of every turn, you’ll have an opportunity to remove
+                  symptoms from your hand either by making a diagnosis, which
+                  consists of a set of matching symptoms, or by discarding a
+                  card to the public discard area.
+                </p>
+
+                <p>
+                  Every symptom card has an effect that will either trigger when
+                  that card is discarded, or when you make a diagnosis with that
+                  card as the top-most card. Symptoms also have effects that
+                  will trigger when they are retrieved from the public discard
+                  area. Whether these effects help or hinder you will depend on
+                  the card!
+                </p>
+
+                <p>
+                  Throughout the course of the game cards in each player’s hand
+                  will become revealed and will become accessible to players who
+                  can see them. For the most part you can use accessible cards
+                  in any player’s hand as though they were in your hand, but
+                  beware, cards that you have revealed become inaccessible to
+                  you - if it is still in your hand at the end of the game it
+                  will count towards your score.
+                </p>
+              </article>
+              <footer class="game-footer"></footer>
+            </div>
+          </main>
         </div>
       </div>
       <!-- Bottom cloud -->
@@ -173,6 +248,7 @@
             <input
               id="mailing-input"
               type="email"
+              name="email"
               placeholder="email"
               required
             />

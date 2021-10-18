@@ -21,6 +21,9 @@ body {
 
 .nav-buffer {
   height: 4rem;
+  &--single-game {
+    height: 6rem;
+  }
 }
 .no-hero-first-section {
   padding-top: 3rem;
@@ -32,6 +35,9 @@ body {
   }
   .nav-buffer {
     height: 6rem;
+    &--single-game {
+      height: 8rem;
+    }
   }
 }
 @media screen and (min-width: 900px) {
@@ -40,6 +46,9 @@ body {
   }
   .nav-buffer {
     height: 8rem;
+    &--single-game {
+      height: 10rem;
+    }
   }
 }
 
@@ -200,9 +209,10 @@ nav {
   text-align: center;
 
   img {
-    animation: plane 3s ease-in-out infinite;
+    // animation: plane 3s ease-in-out infinite;
     width: 100%;
     max-width: 570px;
+    margin: 0 auto;
   }
 
   article {
@@ -240,14 +250,14 @@ nav {
 }
 
 .plane1 {
-  animation: plane 3s ease-in-out infinite;
+  display: flex;
+  justify-content: end;
   position: relative;
-  text-align: center;
+  animation: plane 3s ease-in-out infinite;
   margin: 0 auto;
   width: 80%;
 
   img {
-    width: 100%;
     max-width: 570px;
     cursor: pointer;
   }
@@ -274,11 +284,48 @@ nav {
   box-shadow: var(--shadow-4);
   padding: 0.25rem 1rem 1.5rem 1rem;
   border-radius: 2rem;
-  // margin-bottom: 5rem;
   text-align: center;
+  margin-bottom: 4rem;
 
   h4 {
-    margin: 1rem 0;
+    margin: 0.8rem 0;
+  }
+}
+
+.mailing-form {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 28rem;
+}
+.mailing-form input {
+  flex: 1 1 auto;
+  margin-right: 0.25rem;
+}
+.mailing-form input,
+.mailing-form button {
+  height: 2rem;
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .mailing-signup {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45rem;
+
+    h4 {
+      align-self: flex-end;
+      margin: 0;
+    }
+  }
+  .mailing-signup-news {
+    padding: 1rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -318,6 +365,9 @@ nav {
 @media screen and (min-width: 578px) {
   .cloud-content {
     padding-top: 1rem;
+  }
+  .cloud-content-section {
+    width: 85%;
   }
 }
 @media screen and (min-width: 760px) {
@@ -410,51 +460,43 @@ nav {
   h3 {
     margin-top: 1rem;
   }
+}
 
-  // .game-footer {
-  //   text-align: right;
-  //   a {
-  //     color: var(--primary-dark);
-  //     text-decoration: underline;
-  //     padding-bottom: 0.25rem;
-  //   }
-  // }
+.game-footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+  height: 30px;
+  width: 100%;
 
-  .game-footer-icons {
+  .icon-group {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 0.25rem;
-
-    span {
-      display: flex;
-      align-items: center;
-      font-size: 0.9rem;
-      margin: 0;
-    }
-    img {
-      height: 50%;
-    }
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 0;
+    white-space: nowrap;
+  }
+  img {
+    height: 100%;
+    object-fit: contain;
   }
 }
 
 .all-games-button {
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
-  display: none;
 }
 
 @media screen and (min-width: 578px) {
-  .game-details {
-    .game-footer {
-      span {
-        font-size: 1rem;
-      }
-      img {
-        height: 30px;
-      }
+  .game-details .game-footer-icons {
+    height: 40px;
+    .icon-group {
+      font-size: 1.2rem;
     }
   }
 }
+
 @media screen and (min-width: 900px) {
   .game {
     display: flex;
@@ -471,6 +513,13 @@ nav {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .game-details .game-footer-icons {
+    height: 30px;
+    .icon-group {
+      font-size: 1rem;
+    }
+  }
 }
 
 @media screen and (min-width: 1170px) {
@@ -484,48 +533,55 @@ nav {
 }
 
 /* ============ */
-/* Mailing Form */
-/* ============ */
-
-.mailing-form {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 28rem;
-}
-.mailing-form input {
-  flex: 1 1 auto;
-  margin-right: 0.25rem;
-}
-.mailing-form input,
-.mailing-form button {
-  height: 2rem;
-  border-radius: 0.25rem;
-}
-
-@media screen and (min-width: 768px) {
-  .mailing-signup {
-    margin: 2rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 45rem;
-
-    h4 {
-      align-self: flex-end;
-      margin: 0;
-    }
-  }
-  .mailing-signup-news {
-    padding: 1rem;
-  }
-}
-
-/* ============ */
 /* News         */
 /* ============ */
 
+.article-header {
+  h4 {
+    margin-top: 1rem;
+  }
+}
+
 .news-article {
+  border-bottom: var(--secondary-dark) 1px solid;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* ============ */
+/* Game Page    */
+/* ============ */
+
+.single-game-details {
+  border-top: var(--primary-dark) 1px solid;
+  border-bottom: var(--primary-dark) 1px solid;
+  padding-top: 1rem;
+}
+
+.single-game-links {
+  display: flex;
+  justify-content: space-evenly;
+
+  a {
+    color: var(--white);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .single-game-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+  .image-column {
+    margin-top: 3.25rem;
+  }
+  .single-game-content {
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .single-game-container {
+    gap: 3rem;
+  }
 }

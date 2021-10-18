@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Load JS -->
-    <script src="JS/main.js" defer></script>
+    <script src="./JS/main.js" defer></script>
+    <script src="./JS/newsPosts.js" defer></script>
     <!-- Normalise -->
     <link rel="stylesheet" href="/css/normalise.css" />
     <!-- Main CSS -->
@@ -16,20 +17,19 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
-    <title>Flying Man Games | News</title>
+    <title>Flying Man Games</title>
   </head>
   <body>
     <!-- Navabr -->
     <nav>
       <div class="nav-green-bar"></div>
-
       <!-- mobile nav area -->
       <div class="nav-links hidden">
         <ul>
-          <li><a class="nav-link scroll-link" href="hero">Home</a></li>
-          <li><a class="nav-link scroll-link" href="about">About</a></li>
-          <li><a class="nav-link scroll-link" href="games">Games</a></li>
-          <li><a href="./news.html">News</a></li>
+          <li><a class="nav-link" href="/index.html">Home</a></li>
+          <li><a class="nav-link" href="/index.html">About</a></li>
+          <li><a class="nav-link" href="/index.html#games">Games</a></li>
+          <li><a href="#">News</a></li>
           <li>
             <span>
               <a
@@ -55,42 +55,26 @@
         </button>
       </div>
     </nav>
+    <div class="nav-buffer"></div>
 
-    <!-- Hero -->
-    <div id="hero" class="hero section">
-      <img src="/assets/img/logos/FlyingMan_NoBG.svg" alt="" />
-    </div>
-
-    <!-- Plane mailing section -->
-    <div class="plane-section section">
-      <div class="plane1">
-        <img
-          href="mailing"
-          class="scroll-link"
-          src="/assets/img/bg/Plane_Stripe_Mailing.svg"
-          alt="Join our mailing list"
+    <!-- Mailing sign-up -->
+    <div id="mailing" class="mailing-signup section mailing-signup-news">
+      <h4>Mailing list sign-up:</h4>
+      <form
+        class="mailing-form"
+        id="mailing-form"
+        action="https://formspree.io/f/xyylvqky"
+        method="POST"
+      >
+        <input
+          id="mailing-input"
+          name="email"
+          type="email"
+          placeholder="email"
+          required
         />
-      </div>
-    </div>
-
-    <!-- about section -->
-    <div id="about" class="about-section section">
-      <img src="/assets/img/bg/Plane_Red_About.svg" alt="About Us" />
-      <article>
-        <p>
-          Flying Man Games is a board game and card game design group based in
-          Melbourne, Australia. <br />
-          We've played and designed games together for 15 years, now we'd like
-          to share some with you!
-        </p>
-        <ul>
-          Some of things we care most about in our designs are:
-          <li>Low barrier for entry with high skill ceiling.</li>
-          <li>Interesting decision space.</li>
-          <li>Novel interaction of game mechanics.</li>
-          <li>Small Packages!</li>
-        </ul>
-      </article>
+        <button id="mailing-form-button">Submit</button>
+      </form>
     </div>
 
     <!-- cloud section -->
@@ -124,66 +108,42 @@
         <div class="cloud-content-section section">
           <!-- Plane heading -->
           <img
-            id="games"
             class="heading-plane"
-            src="/assets/img/bg/Plane_Red_Games2.svg"
-            alt=""
+            src="/assets/img/bg/Plane_Red_News.svg"
+            alt="News"
           />
-          <div class="cloud-content">
-            <!-- All games -->
-            <div class="games-section">
-              <!-- A single game -->
-              <a href="/games/prognosis-death.html">
-                <article class="game">
-                  <div class="game-img-container">
-                    <img
-                      class="game-img"
-                      src="./assets/img/games/prognosis-death.png"
-                      alt="Prognosis Death"
-                    />
-                    <p class="game-img-banner">Coming to Kickstarter Soon!</p>
-                  </div>
-                  <div class="game-details">
-                    <div class="game-details-body">
-                      <h3>Prognosis Death</h3>
-                      <p>
-                        Collect symptoms to diagnose a patient and solve a
-                        medical mystery. Will you outwit your rivals and claim
-                        credit for the patient’s recovery? Will you sabotage
-                        them at any cost? Every action has consequences in this
-                        strategic card game.
-                      </p>
-                      <p>Coming to Kickstarter in December 2021!</p>
-                    </div>
-                    <div class="game-footer">
-                      <div class="game-footer-icons">
-                        <span class="icon-group">
-                          <img
-                            src="./assets/img/icons/Players.svg"
-                            alt=""
-                          /><span id="players">2-4</span>
-                          &nbspPlayers
-                        </span>
-                        <span class="icon-group">
-                          <img
-                            src="./assets/img/icons/Age.svg"
-                            alt=""
-                          />Ages&nbsp
-                          <span id="ages">14+</span>
-                        </span>
-                        <span class="icon-group">
-                          <img
-                            src="./assets/img/icons/Time.svg"
-                            alt=""
-                          />&nbsp<span id="players">10-30</span>&nbspMins
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </a>
-            </div>
-            <!-- <button class="all-games-button">See All</button> -->
+          <div id="news-posts" class="cloud-content-news">
+            <article class="news-article">
+              <div class="article-header">
+                <h4>News Title</h4>
+                <span>October 14, 2021</span>
+              </div>
+              <div class="article-body">
+                <img src="../assets/img/games/prognosis-death.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum placeat nihil, ullam labore molestiae deserunt
+                  veritatis asperiores beatae doloremque doloribus! Expedita
+                  recusandae voluptate repudiandae ad ipsam sit dignissimos!
+                  Maiores, optio.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident voluptatibus, nesciunt voluptas eius corrupti
+                  laborum illum incidunt vero facilis. Impedit veritatis
+                  inventore ducimus, odio provident ut beatae eius. Sed quasi
+                  libero magnam ratione quo iusto, laudantium maiores aperiam id
+                  sit odio beatae quis. Mollitia nesciunt quae facilis pariatur.
+                  Delectus, dolores quis. Quis, delectus veniam. Dignissimos
+                  quidem pariatur dolore labore assumenda optio rerum eligendi.
+                  Odit consequatur molestias enim ut quidem commodi quae at?
+                  Provident accusantium, deserunt impedit rerum harum rem
+                  asperiores, dolore beatae obcaecati eius ex expedita tempora
+                  quaerat totam eveniet optio ratione esse? Sed animi
+                  dignissimos sunt minus placeat voluptatem.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -213,24 +173,6 @@
       </div>
     </div>
 
-    <!-- Insta embed -->
-    <div
-      class="embedsocial-hashtag section"
-      data-ref="0d42b9473d9889e9e202b2920779fc3f7e17154f"
-    ></div>
-    <script>
-      (function (d, s, id) {
-        var js;
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://embedsocial.com/cdn/ht.js';
-        d.getElementsByTagName('head')[0].appendChild(js);
-      })(document, 'script', 'EmbedSocialHashtagScript');
-    </script>
-
     <!-- Footer -->
     <footer class="footer">
       <!-- <div class="footer-img-container">
@@ -253,7 +195,6 @@
               required
             />
             <button id="mailing-form-button">Submit</button>
-            <!-- <p id="mailing-form-status"></p> -->
           </form>
         </div>
         <p>

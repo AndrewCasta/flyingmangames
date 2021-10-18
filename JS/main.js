@@ -36,25 +36,32 @@ scrollLinks.forEach(link => {
 // Form Submit
 // ============
 
-var form = document.getElementById('mailing-form');
+// var form = document.getElementByIds('mailing-form');
+var forms = document.querySelectorAll('#mailing-form');
+const formButtons = document.querySelectorAll('#mailing-form-button');
 
-async function handleSubmit(event) {
-  event.preventDefault();
-  var status = document.getElementById('mailing-form-status');
-  var data = new FormData(event.target);
-  fetch(event.target.action, {
-    method: form.method,
-    body: data,
-    headers: {
-      Accept: 'application/json',
-    },
-  })
-    .then(response => {
-      status.innerHTML = 'Thanks for your submission!';
-      form.reset();
+for (const form of forms) {
+  async function handleSubmit(event) {
+    event.preventDefault();
+    // var status = document.getElementById('mailing-form-status');
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        Accept: 'application/json',
+      },
     })
-    .catch(error => {
-      status.innerHTML = 'Oops! There was a problem submitting your form';
-    });
+      .then(response => {
+        // status.innerHTML = 'Thanks for your submission!';
+        form.reset();
+        for (const button of formButtons) {
+          button.innerHTML = 'Thanks!';
+        }
+      })
+      .catch(error => {
+        // status.innerHTML = 'Oops! There was a problem submitting your form';
+      });
+  }
+  form.addEventListener('submit', handleSubmit);
 }
-form.addEventListener('submit', handleSubmit);
