@@ -308,6 +308,7 @@ nav {
 }
 .hero img {
   width: 95%;
+  height: 100%;
 }
 
 @media screen and (min-width: 570px) {
