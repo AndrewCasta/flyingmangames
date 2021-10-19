@@ -174,12 +174,6 @@ nav {
   padding-top: 3rem;
   display: flex;
   justify-content: center;
-  // max-height: 100vh;
-
-  img {
-    width: 95%;
-    height: 100%;
-  }
 }
 
 @media screen and (min-width: 570px) {
@@ -190,6 +184,9 @@ nav {
 @media screen and (min-width: 900px) {
   .hero {
     padding-top: 9rem;
+    img {
+      width: 75%;
+    }
   }
 }
 @media screen and (min-width: 1170px) {
@@ -210,7 +207,6 @@ nav {
   text-align: center;
 
   img {
-    // animation: plane 3s ease-in-out infinite;
     width: 100%;
     max-width: 570px;
     margin: 0 auto;
@@ -354,7 +350,6 @@ nav {
 }
 
 .heading-plane {
-  // animation: plane 3s ease-in-out infinite;
   position: absolute;
   width: 95%;
   top: -70px;
@@ -435,11 +430,6 @@ nav {
   background-color: var(--primary-light);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-3);
-
-  &:hover {
-    transform: scale(1.01);
-    transition: var(--transition);
-  }
 }
 
 .game-img-container {
@@ -468,18 +458,25 @@ nav {
   }
 }
 
+.game-footer {
+  text-align: center;
+  button {
+    margin: 0.5rem 0;
+  }
+}
+
 .game-footer-icons {
   display: flex;
   justify-content: space-evenly;
   gap: 0.25rem;
   margin-bottom: 0.25rem;
-  height: 30px;
+  height: 25px;
   width: 100%;
 
   .icon-group {
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0;
     white-space: nowrap;
   }
@@ -521,19 +518,18 @@ nav {
   }
 
   .game-details .game-footer-icons {
-    height: 30px;
+    height: 25px;
     .icon-group {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 }
 
 @media screen and (min-width: 1170px) {
-  .game-details {
-    .game-footer {
-      span {
-        font-size: 1rem;
-      }
+  .game-details .game-footer-icons {
+    height: 30px;
+    .icon-group {
+      font-size: 1rem;
     }
   }
 }
@@ -546,12 +542,19 @@ nav {
   h4 {
     margin-top: 1rem;
   }
+  span {
+    color: var(--secondary-dark);
+  }
 }
 
 .news-article {
   border-bottom: var(--secondary-dark) 1px solid;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 /* ============ */
@@ -581,8 +584,6 @@ nav {
   }
   .image-column {
     margin-top: 3.25rem;
-  }
-  .single-game-content {
   }
 }
 
