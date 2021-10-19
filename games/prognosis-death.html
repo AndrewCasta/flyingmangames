@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Load JS -->
-    <script src="JS/main.js" defer></script>
+    <script src="../JS/main.js" defer></script>
     <!-- Normalise -->
     <link rel="stylesheet" href="/css/normalise.css" />
     <!-- Main CSS -->
@@ -16,20 +16,19 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
-    <title>Flying Man Games | News</title>
+    <title>Flying Man Games</title>
   </head>
   <body>
     <!-- Navabr -->
     <nav>
       <div class="nav-green-bar"></div>
-
       <!-- mobile nav area -->
       <div class="nav-links hidden">
         <ul>
-          <li><a class="nav-link scroll-link" href="hero">Home</a></li>
-          <li><a class="nav-link scroll-link" href="about">About</a></li>
-          <li><a class="nav-link scroll-link" href="games">Games</a></li>
-          <li><a href="./news.html">News</a></li>
+          <li><a class="nav-link" href="/index.html">Home</a></li>
+          <li><a class="nav-link" href="/index.html">About</a></li>
+          <li><a class="nav-link" href="/index.html#games">Games</a></li>
+          <li><a href="/news.html">News</a></li>
           <li>
             <span>
               <a
@@ -55,43 +54,7 @@
         </button>
       </div>
     </nav>
-
-    <!-- Hero -->
-    <div id="hero" class="hero section">
-      <img src="/assets/img/logos/FlyingMan_NoBG.svg" alt="" />
-    </div>
-
-    <!-- Plane mailing section -->
-    <div class="plane-section section">
-      <div class="plane1">
-        <img
-          href="mailing"
-          class="scroll-link"
-          src="/assets/img/bg/Plane_Stripe_Mailing.svg"
-          alt="Join our mailing list"
-        />
-      </div>
-    </div>
-
-    <!-- about section -->
-    <div id="about" class="about-section section">
-      <img src="/assets/img/bg/Plane_Red_About.svg" alt="About Us" />
-      <article>
-        <p>
-          Flying Man Games is a board game and card game design group based in
-          Melbourne, Australia. <br /><br />
-          We've played and designed games together for 15 years, now we'd like
-          to share some with you!
-        </p>
-        <ul>
-          Some of the things we care most about in our designs are:
-          <li>Low barrier for entry with high skill ceiling.</li>
-          <li>Interesting decision space.</li>
-          <li>Novel interaction of game mechanics.</li>
-          <li>Small Packages!</li>
-        </ul>
-      </article>
-    </div>
+    <div class="nav-buffer--single-game"></div>
 
     <!-- cloud section -->
     <div id="games" class="cloud-section">
@@ -124,66 +87,124 @@
         <div class="cloud-content-section section">
           <!-- Plane heading -->
           <img
-            id="games"
             class="heading-plane"
-            src="/assets/img/bg/Plane_Red_Games2.svg"
-            alt=""
+            src="/assets/img/games/Plane_Red_Prognosis.svg"
+            alt="News"
           />
-          <div class="cloud-content">
-            <!-- All games -->
-            <div class="games-section">
-              <!-- A single game -->
-              <article class="game">
-                <div class="game-img-container">
-                  <img
-                    class="game-img"
-                    src="./assets/img/games/prognosis-death.png"
-                    alt="Prognosis Death"
-                  />
-                  <p class="game-img-banner">Coming to Kickstarter Soon!</p>
-                </div>
-                <div class="game-details">
-                  <div class="game-details-body">
-                    <h3>Prognosis Death</h3>
-                    <p>
-                      Collect symptoms to diagnose a patient and solve a medical
-                      mystery. Will you outwit your rivals and claim credit for
-                      the patient’s recovery? Will you sabotage them at any
-                      cost? Every action has consequences in this strategic card
-                      game.
-                    </p>
-                    <p>Coming to Kickstarter in December 2021!</p>
-                  </div>
-                  <div class="game-footer">
-                    <div class="game-footer-icons">
-                      <span class="icon-group">
-                        <img src="./assets/img/icons/Players.svg" alt="" /><span
-                          id="players"
-                          >2-4</span
-                        >
-                        &nbspPlayers
-                      </span>
-                      <span class="icon-group">
-                        <img src="./assets/img/icons/Age.svg" alt="" />Ages&nbsp
-                        <span id="ages">14+</span>
-                      </span>
-                      <span class="icon-group">
-                        <img
-                          src="./assets/img/icons/Time.svg"
-                          alt=""
-                        />&nbsp<span id="players">10-30</span>&nbspMins
-                      </span>
-                    </div>
-                    <a href="/games/prognosis-death.html"
-                      ><button>See More</button></a
-                    >
-                  </div>
-                </div>
-              </article>
-              <!-- </a> -->
+          <!-- game section -->
+          <main id="single-game-container" class="single-game-container">
+            <div class="image-column">
+              <img src="../assets/img/games/prognosis-death.png" alt="" />
             </div>
-            <!-- <button class="all-games-button">See All</button> -->
-          </div>
+            <div class="single-game-content">
+              <h2>Prognosis Death</h2>
+              <article class="single-game-details">
+                <div class="game-footer-icons">
+                  <span class="icon-group">
+                    <img src="../assets/img/icons/Players.svg" alt="" /><span
+                      id="players"
+                      >2-4</span
+                    >
+                    &nbspPlayers
+                  </span>
+                  <span class="icon-group">
+                    <img src="../assets/img/icons/Age.svg" alt="" />Ages&nbsp
+                    <span id="ages">14+</span>
+                  </span>
+                  <span class="icon-group">
+                    <img src="../assets/img/icons/Time.svg" alt="" />&nbsp<span
+                      id="players"
+                      >10-30</span
+                    >&nbspMins
+                  </span>
+                </div>
+
+                <ul class="single-game-links">
+                  <li>
+                    <button>
+                      <a href="https://bit.ly/3AU2Try" target="_blank"
+                        >Rulebook</a
+                      >
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <a
+                        href="https://boardgamegeek.com/boardgame/347765/prognosis-death"
+                        target="_blank"
+                        >BGG</a
+                      >
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <a
+                        href="https://www.kickstarter.com/projects/flyingmangames/prognosisdeath"
+                        target="_blank"
+                        >Kickstarter</a
+                      >
+                    </button>
+                  </li>
+                </ul>
+              </article>
+              <article class="single-game-body">
+                <p>Coming soon! Sign up to our mailing list for updates!</p>
+                <p>
+                  St. Muerte Hospital 10:00 pm - A patient is admitted to the
+                  emergency ward with rapidly developing symptoms. Doctors rush
+                  to see the patient with morbid curiosity on the otherwise dull
+                  night...
+                </p>
+
+                <p>
+                  Prognosis Death is a set collection game where each player is
+                  a doctor who is trying to take the credit for curing a
+                  patient. Collect symptoms and use them to construct a
+                  diagnosis. In order to successfully discharge the patient
+                  you'll need to outwit your rivals and challenge their
+                  diagnoses. Be aware - every action has consequences, if you
+                  delay too long the patient may perish!
+                </p>
+
+                <p>
+                  Your objective in Prognosis Death is to either have the lowest
+                  score remaining in your hand when the patient is discharged,
+                  or the highest score in the case that the patient succumbs to
+                  their illness and perishes.
+                </p>
+
+                <p>
+                  At the start of every turn in Prognosis Death you’ll add
+                  symptoms to your hand by either drawing an unknown card from
+                  the deck, or by taking a card from the public discard area. At
+                  the end of every turn, you’ll have an opportunity to remove
+                  symptoms from your hand either by making a diagnosis, which
+                  consists of a set of matching symptoms, or by discarding a
+                  card to the public discard area.
+                </p>
+
+                <p>
+                  Every symptom card has an effect that will either trigger when
+                  that card is discarded, or when you make a diagnosis with that
+                  card as the top-most card. Symptoms also have effects that
+                  will trigger when they are retrieved from the public discard
+                  area. Whether these effects help or hinder you will depend on
+                  the card!
+                </p>
+
+                <p>
+                  Throughout the course of the game cards in each player’s hand
+                  will become revealed and will become accessible to players who
+                  can see them. For the most part you can use accessible cards
+                  in any player’s hand as though they were in your hand, but
+                  beware, cards that you have revealed become inaccessible to
+                  you - if it is still in your hand at the end of the game it
+                  will count towards your score.
+                </p>
+              </article>
+              <footer class="game-footer"></footer>
+            </div>
+          </main>
         </div>
       </div>
       <!-- Bottom cloud -->
@@ -212,26 +233,11 @@
       </div>
     </div>
 
-    <!-- Insta embed -->
-    <div
-      class="embedsocial-hashtag section"
-      data-ref="0d42b9473d9889e9e202b2920779fc3f7e17154f"
-    ></div>
-    <script>
-      (function (d, s, id) {
-        var js;
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://embedsocial.com/cdn/ht.js';
-        d.getElementsByTagName('head')[0].appendChild(js);
-      })(document, 'script', 'EmbedSocialHashtagScript');
-    </script>
-
     <!-- Footer -->
     <footer class="footer">
+      <!-- <div class="footer-img-container">
+        <img class="footer-img" src="/assets/img/bg/Hills2.svg" alt="" />
+      </div> -->
       <div class="footer-content">
         <div id="mailing" class="mailing-signup section">
           <h4>Mailing list sign-up:</h4>
@@ -249,7 +255,6 @@
               required
             />
             <button id="mailing-form-button">Submit</button>
-            <!-- <p id="mailing-form-status"></p> -->
           </form>
         </div>
         <p>
