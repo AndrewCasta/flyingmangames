@@ -40,7 +40,7 @@ scrollLinks.forEach(link => {
 var forms = document.querySelectorAll('#mailing-form');
 const formButtons = document.querySelectorAll('#mailing-form-button');
 
-for (const form of forms) {
+forms.forEach(form => {
   async function handleSubmit(event) {
     event.preventDefault();
     // var status = document.getElementById('mailing-form-status');
@@ -64,4 +64,4 @@ for (const form of forms) {
       });
   }
   form.addEventListener('submit', handleSubmit);
-}
+});
