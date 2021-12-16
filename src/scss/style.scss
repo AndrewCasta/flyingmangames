@@ -276,6 +276,27 @@ nav {
   }
 }
 
+.subscribe-header {
+  img {
+    height: 100px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-header {
+    display: flex;
+    h1 {
+      align-self: flex-end;
+      margin-bottom: 0;
+    }
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+}
+
 .mailing-signup-news {
   background: rgba(255, 255, 255, 0.75);
   box-shadow: var(--shadow-4);
@@ -430,6 +451,12 @@ nav {
   background-color: var(--primary-light);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-3);
+  margin-bottom: 2rem;
+
+  li {
+    list-style: disc;
+    margin-left: 1rem;
+  }
 }
 
 .game-img-container {
@@ -569,10 +596,25 @@ nav {
 
 .single-game-links {
   display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 
   a {
     color: var(--white);
+  }
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  img {
+    flex: 1 1 400px;
+    max-width: 400px;
   }
 }
 
@@ -584,6 +626,9 @@ nav {
   }
   .image-column {
     margin-top: 3.25rem;
+    img {
+      margin-bottom: 1rem;
+    }
   }
 }
 
