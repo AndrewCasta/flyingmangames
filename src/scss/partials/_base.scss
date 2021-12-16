@@ -110,7 +110,8 @@ img {
   object-fit: cover;
 }
 
-button {
+button,
+.button {
   background: var(--secondary-dark);
   cursor: pointer;
   color: var(--white);
