@@ -119,7 +119,8 @@ img {
   object-fit: cover;
 }
 
-button {
+button,
+.button {
   background: var(--secondary-dark);
   cursor: pointer;
   color: var(--white);
@@ -132,7 +133,8 @@ button {
   text-transform: capitalize;
   display: inline-block;
 }
-button:hover {
+button:hover,
+.button:hover {
   background: var(--secondary);
   box-shadow: var(--shadow-3);
 }
@@ -402,6 +404,24 @@ nav {
     bottom: 0px;
   }
 }
+.subscribe-header img {
+  height: 100px;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-header {
+    display: flex;
+  }
+  .subscribe-header h1 {
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
+  .subscribe-header img {
+    height: 100px;
+    width: auto;
+  }
+}
 .mailing-signup-news {
   background: rgba(255, 255, 255, 0.75);
   box-shadow: var(--shadow-4);
@@ -549,6 +569,11 @@ nav {
   background-color: var(--primary-light);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-3);
+  margin-bottom: 2rem;
+}
+.game li {
+  list-style: disc;
+  margin-left: 1rem;
 }
 
 .game-img-container {
@@ -680,10 +705,24 @@ nav {
 
 .single-game-links {
   display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .single-game-links a {
   color: var(--white);
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.image-gallery img {
+  flex: 1 1 400px;
+  max-width: 400px;
 }
 
 @media screen and (min-width: 900px) {
@@ -695,6 +734,9 @@ nav {
 
   .image-column {
     margin-top: 3.25rem;
+  }
+  .image-column img {
+    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 1170px) {
