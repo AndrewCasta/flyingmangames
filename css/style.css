@@ -699,6 +699,10 @@ nav {
   padding-top: 1rem;
 }
 
+.single-game-body .callout {
+  color: var(--secondary-dark);
+}
+
 .single-game-links {
   display: flex;
   gap: 1rem;
