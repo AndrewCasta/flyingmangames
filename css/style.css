@@ -472,6 +472,11 @@ nav {
     margin-bottom: 4rem;
   }
 }
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+}
+
 /* ======= */
 /* Cloud */
 /* ======= */
