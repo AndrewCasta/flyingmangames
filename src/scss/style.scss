@@ -87,6 +87,10 @@ nav {
   }
 }
 
+.icon-flip {
+  transform: rotate(180deg);
+}
+
 .nav-links {
   background-color: var(--hills-bg);
   transition: var(--transition);

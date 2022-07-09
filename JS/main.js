@@ -4,10 +4,12 @@
 
 const mobileNavLinks = document.querySelector('.nav-links');
 const navToggle = document.querySelector('#nav-toggle');
+const navIcon = document.querySelector('#nav-toggle i');
 
 navToggle.addEventListener('click', e => {
   e.preventDefault;
   mobileNavLinks.classList.toggle('hidden');
+  navIcon.classList.toggle('icon-flip');
 });
 
 const scrollLinks = document.querySelectorAll('.scroll-link');
