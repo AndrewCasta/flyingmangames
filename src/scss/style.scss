@@ -87,6 +87,10 @@ nav {
   }
 }
 
+.icon-flip {
+  transform: rotate(180deg);
+}
+
 .nav-links {
   background-color: var(--hills-bg);
   transition: var(--transition);
@@ -345,6 +349,11 @@ nav {
     padding: 1rem;
     margin-bottom: 4rem;
   }
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
 }
 
 /* ======= */
